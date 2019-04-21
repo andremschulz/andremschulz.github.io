@@ -1,2 +1,2 @@
-# andremschulz-andreschulz.github.io
+# andreschulz.github.io
 Portfólio
