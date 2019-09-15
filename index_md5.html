@@ -2,7 +2,7 @@
 <!--
 /*
  * HASH MD5
- * https://github.com/HawkSTK1/hawkstk1.github.io/
+ * https://github.com/andremschulz/andremschulz.github.io/
  *
  * Licensed under the MIT license:
  * https://opensource.org/licenses/MIT
@@ -16,50 +16,23 @@
 <![endif]-->
   <meta charset="utf-8">
   <title> .: Gerador MD5 :. </title>
-  <meta name="description" content="JavaScript MD5 implementation. Compatible with server-side environments like Node.js, module loaders like RequireJS, Browserify or webpack and all web browsers.">
+  <meta name="description"
+    content="JavaScript MD5 implementation. Compatible with server-side environments like Node.js, module loaders like RequireJS, Browserify or webpack and all web browsers.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="icon" href="img/cadeado_f.png" type="image/x-icon" />
   <link rel="shortcut icon" href="img/cadeado_f.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <div><img src="img/cadeado.png"></div>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 
 <body oncontextmenu="return false">
-  <style>
-    body{
-background-color:white;
-}
-div{
-text-align: center;
-}
-h1,h2{
-text-align: center;
-font-size: 30px;
-}
-label{
-text-align: center;
-font-size: 24px;
-}
-button {
-text-align: center;
-}
-form {
-text-align: center;
-}
-textarea{
-  border-style: 50px solid;
-  border-color: black;
-  border-radius: 5px;
-
-}
-i {
-  color: black;
-}
-</style>
   <br>
   <h1>GERADOR HASH MD5</h1>
   <form>
@@ -74,30 +47,31 @@ i {
       <button type="reset" class="btn btn-danger btn-lg" id="reset">RESETAR</button>
     </div>
   </form>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
   <script src="js/md5.js"></script>
   <script src="js/demo/demo.js"></script>
   <script type="text/javascript">
     function disableSelection(target) {
       if (typeof target.onselectstart != "undefined") //IE
-        target.onselectstart = function() {
+        target.onselectstart = function () {
           return false
         }
       else if (typeof target.style.MozUserSelect != "undefined") //Firefox
         target.style.MozUserSelect = "none"
       else //Todas as outras rotas (ie: Opera)
-        target.onmousedown = function() {
+        target.onmousedown = function () {
           return false
         }
       target.style.cursor = "default"
     }
   </script>
   <script type="text/javascript" language="Javascript">
-    <!-- Inicio
-    document.oncontextmenu = function() {
+    document.oncontextmenu = function () {
       return false
     }
-    // Fim -->
+    // Fim 
   </script>
   <div>
     <a href="https://github.com/HawkSTK1" target="_blank"> <i class="fab fa-github" style="font-size: 40px "></i></a>

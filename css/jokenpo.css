@@ -1,16 +1,18 @@
-.div1{
+.div1 {
   text-align: center;
   margin-right: auto;
 }
 
-h1{
-text-align: center;
+h1 {
+  text-align: center;
 }
-footer{
+
+footer {
   margin: auto;
   text-align: center;
   margin-top: 150px;
 }
+
 .img-responsive {
-    margin: 0 auto;
+  margin: 0 auto;
 }

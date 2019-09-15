@@ -1,60 +1,71 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/jokenpo.png" type="image/x-icon" />
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/jokenpo.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jokenpo.js"></script>
-    <title>.: Jo Ken Pô :.</title>
-  </head>
-  <body>
-    <h1> Jo Ken Pô - Unipar Aberta 2018</h1>
-<div class="form-control">
-  <br>
-  <br>
-  <div class="div1" >
-    <img  class="img-responsive" src="img/pedra_jogador.png" width="80" height="80" onclick="escolheuPedra(0,3)"/>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/jokenpo.png" type="image/x-icon" />
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet'
+    type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/jokenpo.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="js/jokenpo.js"></script>
+  <title>.: Jo Ken Pô :.</title>
+</head>
+
+<body>
+  <h1> Jo Ken Pô - Unipar Aberta 2018</h1>
+  <div class="form-control">
+    <br>
+    <br>
+    <div class="div1">
+      <img class="img-responsive" src="img/pedra_jogador.png" width="80" height="80" onclick="escolheuPedra(0,3)" />
+    </div>
+    <br>
+    <br>
+    <div class="div2">
+      <img src="img/papel_jogador.png" width="80" height="80" class="img-responsive" onclick="escolheuPapel(0,3)" />
+      <br>
+      <br>
+      <img src="img/tesoura_jogador.png" width="80" height="80" class="img-responsive" onclick="escolheuTesoura(0,3)" />
+    </div>
   </div>
   <br>
   <br>
-<div class="div2">
-    <img src="img/papel_jogador.png" width="80" height="80" class="img-responsive" onclick="escolheuPapel(0,3)"/>
-<br>
-<br>
-    <img src="img/tesoura_jogador.png" width="80" height="80" class="img-responsive" onclick="escolheuTesoura(0,3)"/>
-</div>
-</div>
-<br>
-<br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Tentativas:</th>
-      <th scope="col">Acertos:</th>
-      <th scope="col">Erros:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td id="tentativa">0</td>
-      <td id="acerto">0</td>
-      <td id="erro">0</td>
-    </tr>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tentativas:</th>
+        <th scope="col">Acertos:</th>
+        <th scope="col">Erros:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td id="tentativa">0</td>
+        <td id="acerto">0</td>
+        <td id="erro">0</td>
+      </tr>
     </tbody>
-</table>
-  </body>
-  <footer>
-    <label>Criadores: <a href="https://github.com/williamfds" target="_blank">William F. da Silva </a> & <a href="https://github.com/HawkSTK1" target="_blank"> André Schulz</a> - 2018 - Todos os direitos reservados.</label>
-    <br>
-  </footer>
+  </table>
+</body>
+<footer>
+  <label>Criadores: <a href="https://github.com/williamfds" target="_blank">William F. da Silva </a> & <a
+      href="https://github.com/HawkSTK1" target="_blank"> André Schulz</a> - 2018 - Todos os direitos
+    reservados.</label>
+  <br>
+</footer>
+
 </html>
